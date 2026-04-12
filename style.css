@@ -1,1 +1,171 @@
+/* === Reset e base === */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #111111;
+  color: #eeeeee;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* === Header === */
+header {
+  background-color: #1a1a1a;
+  border-bottom: 3px solid #cc0000;
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+header h1 span {
+  color: #cc0000;
+}
+
+.subtitulo {
+  margin-top: 0.4rem;
+  font-size: 1rem;
+  color: #aaaaaa;
+  letter-spacing: 0.08em;
+}
+
+/* === Navegação === */
+nav {
+  background-color: #1a1a1a;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: 0.9rem 1.4rem;
+  color: #cccccc;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+nav ul li a:hover,
+nav ul li a.ativo {
+  color: #ffffff;
+  background-color: #cc0000;
+}
+
+/* === Main === */
+main {
+  flex: 1;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+}
+
+/* === Seção boas-vindas === */
+.boas-vindas {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.boas-vindas h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+  color: #ffffff;
+}
+
+.boas-vindas p {
+  font-size: 1.05rem;
+  color: #aaaaaa;
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* === Cards de categoria === */
+.categorias {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  display: block;
+  background-color: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  padding: 1.8rem 1.5rem;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.card:hover {
+  border-color: #cc0000;
+  transform: translateY(-3px);
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  color: #cc0000;
+  margin-bottom: 0.6rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #aaaaaa;
+  line-height: 1.6;
+}
+
+/* === Footer === */
+footer {
+  background-color: #1a1a1a;
+  border-top: 1px solid #2a2a2a;
+  text-align: center;
+  padding: 1.2rem;
+  font-size: 0.85rem;
+  color: #666666;
+}
+
+/* === Responsivo === */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  nav ul li a {
+    padding: 0.7rem 1rem;
+    font-size: 0.88rem;
+  }
+
+  main {
+    padding: 1.5rem 1rem;
+  }
+
+  .boas-vindas h2 {
+    font-size: 1.4rem;
+  }
+}
