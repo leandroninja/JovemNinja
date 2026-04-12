@@ -28,7 +28,7 @@ body {
 /* === Header === */
 header {
     background-color: #111111;
-    border-bottom: 4px solid #c8102e;
+    border-bottom: 4px solid #1976d2;
     padding: 22px 20px;
     text-align: center;
 }
@@ -72,7 +72,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #c8102e;
+    background-color: #1976d2;
     color: #ffffff;
 }
 
@@ -98,7 +98,7 @@ h1, h2, h3 {
 }
 
 h2 {
-    color: #c8102e;
+    color: #1976d2;
     font-size: 1.25em;
     margin-bottom: 14px;
     padding-bottom: 8px;
@@ -161,7 +161,7 @@ section a[href$=".pdf"] {
     display: inline-block;
     margin-top: 10px;
     padding: 9px 20px;
-    background-color: #c8102e;
+    background-color: #1976d2;
     color: #ffffff;
     text-decoration: none;
     border-radius: 4px;
@@ -171,7 +171,7 @@ section a[href$=".pdf"] {
 }
 
 section a[href$=".pdf"]:hover {
-    background-color: #a00d25;
+    background-color: #1565c0;
 }
 
 /* === Redes sociais (ícones) === */
